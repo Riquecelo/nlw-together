@@ -36,7 +36,7 @@ img{
 
 /*===========BASE*/
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;/*faz navegação suave entre links na mesma página*/
 }
 
 body{
@@ -123,6 +123,10 @@ body{
     background-color: var(--body-color);
 }
 
+#header.scroll{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
 main{
     margin-top: calc(var(--header-height) + 2rem);
 }
@@ -180,7 +184,15 @@ nav ul li a:hover::after{
 nav .menu{
     opacity: 0;
     visibility: hidden;
+
+    top: -20rem;
+    transition: 0.2s;
 }
+
+nav .menu ul{
+    display: none;
+}
+
 
 /*Mostrar menu*/
 nav.show .menu{/*obs: nav esta junto da classe show para recebe-la dentro da classe menu*/
@@ -195,11 +207,13 @@ nav.show .menu{/*obs: nav esta junto da classe show para recebe-la dentro da cla
     position: fixed;
     top: 0;
     left: 0;
-}
 
-nav.show .menu{
     display: grid;
     place-content: center;
+}
+    
+nav.show .menu ul{
+    display: grid;
 }
 
 nav.show ul.grid{
@@ -219,13 +233,16 @@ nav .icon-close{
     opacity: 0;
 
     position: absolute;
+    top: -1.5rem;
     right: 1.5rem;
     /*TRANSIÇÃO BACANA*/
+    transition: 0.2s;
 }
 
 nav.show div.icon-close{
     visibility: visible;
     opacity: 1;
+    top: 1.5rem;
 }
 
 /*==============HOME*/
