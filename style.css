@@ -366,9 +366,20 @@ nav.show div.icon-close{
     margin-bottom: 0.75rem;
 }
 
-/*=============SERVICES*/
+/*=============TESTIMONIALS*/
 #testimonials{
     background: white;
+}
+
+#testimonials .container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#testimonials header{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
 }
 
 #testimonials blockquote{
@@ -404,4 +415,14 @@ nav.show div.icon-close{
     object-fit: cover;
     clip-path: circle();
     margin-right: 0.5rem;
+}
+
+/*swiper*/
+.swiper-slide{
+    height: auto;
+    padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--base-color);
 }

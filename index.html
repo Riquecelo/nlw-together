@@ -9,12 +9,15 @@
     <!--Icones-->
     <link rel="stylesheet" href="assets/style.css">
 
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!--Styles-->
     <link rel="stylesheet" href="style.css">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -102,57 +105,64 @@
 
         <!--Testimonials-->
         <section class="section" id="testimonials"> 
-            <div class="container grid">
+            <div class="container">
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
-                <div class="testimonials">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
-                            </p>
-                            <cite>
-                            <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="foto de Wanessa">
-                            Wanessa Souza
-                            </cite>
-                        </blockquote>
-                    </div>
+                <div class="testimonials swiper-container">
+                   <div class="swiper-wrapper">
+                       
+                       <div class="testimonial swiper-slide">
+                           <blockquote>
+                               <p>
+                               <span>&ldquo;</span>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
+                               </p>
+                               <cite>
+                               <img src="https://randomuser.me/api/portraits/women/13.jpg" alt="foto de Wanessa">
+                               Wanessa Souza
+                               </cite>
+                           </blockquote>
+                       </div>
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
-                            </p>
-                            <cite>
-                            <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="foto de Monike">
-                            Monike Nagato
-                            </cite>
-                        </blockquote>
-                    </div>
+                       <div class="testimonial swiper-slide">
+                           <blockquote>
+                               <p>
+                               <span>&ldquo;</span>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
+                               </p>
+                               <cite>
+                               <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="foto de Monike">
+                               Monike Nagato
+                               </cite>
+                           </blockquote>
+                       </div>
 
-                    <div class="testimonial">
-                        <blockquote>
-                            <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
-                            </p>
-                            <cite>
-                            <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="foto de Jessica">
-                            Jessica Carvalho
-                            </cite>
-                        </blockquote>
-                    </div>
-                    
+                       <div class="testimonial swiper-slide">
+                           <blockquote>
+                               <p>
+                               <span>&ldquo;</span>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur earum minus totam! Esse, saepe. Numquam possimus, corporis beatae sequi adipisci aliquam. Nemo corporis totam quasi fugit architecto voluptas ab rem.
+                               </p>
+                               <cite>
+                               <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="foto de Jessica">
+                               Jessica Carvalho
+                               </cite>
+                           </blockquote>
+                       </div>
+                       
+                   </div>
+
+                   <!-- If we need pagination -->
+                   <div class="swiper-pagination"></div>
+                </div>   
             </div>
         </section>
 
         <!--Contact-->
     </main>
 
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
    <script src="main.js"></script>
 </body>
 </html>
