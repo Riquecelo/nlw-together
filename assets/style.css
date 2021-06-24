@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3xdwrz');
-  src:  url('fonts/icomoon.eot?3xdwrz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3xdwrz') format('truetype'),
-    url('fonts/icomoon.woff?3xdwrz') format('woff'),
-    url('fonts/icomoon.svg?3xdwrz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vdx39w');
+  src:  url('fonts/icomoon.eot?vdx39w#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vdx39w') format('truetype'),
+    url('fonts/icomoon.woff?vdx39w') format('woff'),
+    url('fonts/icomoon.svg?vdx39w#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+  content: "\e90c";
+}
+.icon-mail:before {
+  content: "\e90b";
+}
 .icon-map-pin:before {
   content: "\e900";
 }
@@ -57,7 +63,4 @@
 }
 .icon-youtube:before {
   content: "\e90a";
-}
-.icon-mail:before {
-  content: "\e90b";
 }
