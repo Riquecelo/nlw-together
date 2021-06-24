@@ -18,10 +18,12 @@ for (const link of links){
 }
 
 //mudar o header da página quando der scroll
-const header = document.querySelector("#header")
-const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function(){
+
+function changeHeaderWhenScroll(){
+    const header = document.querySelector("#header")
+    const navHeight = header.offsetHeight
+
     if(window.scrollY >= navHeight){
         //scroll é maior que a altura do header
         header.classList.add('scroll')
@@ -29,7 +31,9 @@ window.addEventListener('scroll', function(){
         //menor que a altura do header
         header.classList.remove('scroll')
     }
-})
+}
+
+
 
 /*slider*/
 const swiper = new Swiper('.swiper-container', {
@@ -61,11 +65,17 @@ const swiper = new Swiper('.swiper-container', {
     )
 
     /*botão voltar para o top*/
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', function(){
+function backToTop(){
+    const backToTopButton = document.querySelector('.back-to-top')
+
     if(window.scrollY >= 560){
-       backToTopButton.classList.add('show') 
-    }else{
-        backToTopButton.classList.remove('show')
-    }
+        backToTopButton.classList.add('show') 
+     }else{
+         backToTopButton.classList.remove('show')
+     }
+}
+
+window.addEventListener('scroll', function(){
+    changeHeaderWhenScroll()
+    backToTop()
 })
