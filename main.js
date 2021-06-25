@@ -23,7 +23,6 @@ const navHeight = header.offsetHeight
 
 function changeHeaderWhenScroll(){
     
-
     if(window.scrollY >= navHeight){
         //scroll é maior que a altura do header
         header.classList.add('scroll')
@@ -113,6 +112,7 @@ function actvateMenuAtCurrentSection() {
 window.addEventListener('scroll', function(){
     changeHeaderWhenScroll()
     backToTop()
+    actvateMenuAtCurrentSection()
 })
 
 
