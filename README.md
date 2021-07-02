@@ -4,7 +4,7 @@
 # NLW-together 2021<br>
 ## Missão: Origin<br>
 Trilha voltada para o frontend com a construção de uma One Page.<br>
-### Objetivos
+## Objetivos
 * Iniciar o projeto adquirindo conhecimentos fundamentais de HTML e CSS.
 * Adicionar informações estrutural e semanticas com tags html e estilo ao projeto com propriedades CSS. 
 * Início à programação em JavasScript.
