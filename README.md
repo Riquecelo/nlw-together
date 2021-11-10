@@ -14,5 +14,5 @@ Trilha voltada para o frontend com a construção de uma One Page.<br>
 <img alt="GitHub Last Commit" src="https://github.com/Riquecelo/nlw-together/blob/main/OriginSix.gif"/>
 
 
-* <b>clique no botão abaixo para ver o resultado final</b> <br><br>
+* <b>clique na figura abaixo para ver o resultado final</b> <br><br>
 <a href="https://riquecelo.github.io/nlw-together/"><img src="https://github.com/Riquecelo/nlw-together/blob/main/beautysalon..PNG"/></a>
